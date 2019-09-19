@@ -1,0 +1,16 @@
+template: Hello, %s!
+defaultName: Stranger
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8085
+  adminConnectors:
+    - type: http
+      port: 8084
+
+database:
+    driverClass: org.postgresql.Driver
+    user: postgres
+    password: mysecretpassword
+    url: jdbc:postgresql://172.17.0.4:5432/postgres
