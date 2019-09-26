@@ -41,14 +41,14 @@ public class UsuarioRestController {
     @POST
     @Path("/findById")
     @UnitOfWork
-    public Usuario findPerson(Usuario user){
+    public Usuario findUsuario(Usuario user){
         return dao.findById(user);
     }
     
     @POST
     @Path("/create")
     @UnitOfWork
-    public Long createPerson(Usuario user){
+    public Long createUsuario(Usuario user){
          return dao.createUsuario(user);
     }
     
