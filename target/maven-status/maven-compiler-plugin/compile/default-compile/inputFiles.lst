@@ -1,8 +1,10 @@
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/entity/Usuario.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/dao/UsuarioConfiguration.java
+/home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/dao/CommonResponse.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/controller/UsuarioRestController.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/representations/Employee.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/dao/UsuarioDAO.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/App.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/dao/EmployeeDB.java
+/home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/dao/CommonInput.java
 /home/osboxes/Documents/BBDD/DropWizardUsuario/src/main/java/com/bbdd/usuario/rest/controller/EmployeeRESTController.java

@@ -5,10 +5,11 @@
  */
 package com.bbdd.usuario.rest.controller;
 
+import com.bbdd.usuario.rest.dao.CommonInput;
+import com.bbdd.usuario.rest.dao.CommonResponse;
 import com.bbdd.usuario.rest.dao.UsuarioDAO;
 import com.bbdd.usuario.rest.entity.Usuario;
 import io.dropwizard.hibernate.UnitOfWork;
-import java.util.List;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -33,29 +34,38 @@ public class UsuarioRestController {
     }
     
     @GET
+   // @Path("/findAll")
     @UnitOfWork
-    public List<Usuario> findAll(){
-        return dao.findAll();
+    public CommonResponse findAll(){
+        CommonResponse response = null;
+        try {
+          System.out.println("11111111111111");
+           response.setUsuarios(dao.findAll()); 
+        } catch (Exception e) {
+            response.setRespuesta(e.getMessage());
+        }
+        
+        return response;
     }
     
     @POST
     @Path("/findById")
     @UnitOfWork
-    public Usuario findUsuario(Usuario user){
-        return dao.findById(user);
+    public Usuario findUsuario(CommonInput input){
+        return dao.findById(input.getUsuario());
     }
     
     @POST
     @Path("/create")
     @UnitOfWork
-    public Long createUsuario(Usuario user){
-         return dao.createUsuario(user);
+    public Long createUsuario(CommonInput input){
+         return dao.createUsuario(input.getUsuario());
     }
     
     @POST
     @Path("/delete")
     @UnitOfWork
-    public Long deleteUsuario(Usuario user){
-        return dao.deleteUsuario(user);
+    public Long deleteUsuario(CommonInput input){
+        return dao.deleteUsuario(input.getUsuario());
     }
 }

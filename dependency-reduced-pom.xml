@@ -37,7 +37,7 @@
               </filters>
               <transformers>
                 <transformer>
-                  <mainClass>com.bbdd.dropwizardusuario.rest.App</mainClass>
+                  <mainClass>com.bbdd.usuario.rest.App</mainClass>
                 </transformer>
                 <transformer />
               </transformers>

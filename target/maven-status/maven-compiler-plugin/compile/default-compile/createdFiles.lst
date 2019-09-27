@@ -1,0 +1,12 @@
+com/bbdd/usuario/rest/entity/Usuario_.class
+com/bbdd/usuario/rest/dao/UsuarioConfiguration.class
+com/bbdd/usuario/rest/dao/UsuarioDAO.class
+com/bbdd/usuario/rest/dao/CommonResponse.class
+com/bbdd/usuario/rest/entity/Usuario.class
+com/bbdd/usuario/rest/dao/EmployeeDB.class
+com/bbdd/usuario/rest/App.class
+com/bbdd/usuario/rest/dao/CommonInput.class
+com/bbdd/usuario/rest/controller/EmployeeRESTController.class
+com/bbdd/usuario/rest/controller/UsuarioRestController.class
+com/bbdd/usuario/rest/App$1.class
+com/bbdd/usuario/rest/representations/Employee.class
