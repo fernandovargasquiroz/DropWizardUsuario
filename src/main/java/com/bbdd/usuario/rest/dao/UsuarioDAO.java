@@ -36,24 +36,31 @@ public class UsuarioDAO extends AbstractDAO<Usuario> {
         currentSession().delete(usuario);
         return usuario.getId();
     }
-
     public List<Usuario> findAll() {
         List<Usuario> result=new ArrayList<Usuario>();
         try {
             Query<Usuario> query=query("SELECT u FROM Usuario u");
-            System.out.println("22222222 "+query.getResultList());
+            //System.out.println("22222222 "+query.list());
             for (Usuario usuario : query.getResultList()) {
                 System.out.println("usuario: "+usuario.getNombre());
                 result.add(usuario);
             }
              System.out.println("result: "+result.size());
-            query.setFetchSize(0);
-           
-        return result;
-        } catch (Exception e) {
+              
+        return query.list();
+        } catch (java.lang.NullPointerException e) {
             System.out.println("Error ::::::::::::::::::::::::::"+e.getMessage());
         }
         return result;
      
     }
+    
+    public List<Usuario> findAllUsers() {
+   
+            Query<Usuario> query=query("SELECT u FROM Usuario u");
+
+        return query.list();
+     
+    }
+    
 }

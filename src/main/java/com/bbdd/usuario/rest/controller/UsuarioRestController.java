@@ -47,6 +47,20 @@ public class UsuarioRestController {
         
         return response;
     }
+     @GET
+     @Path("/findAll")
+    @UnitOfWork
+    public CommonResponse findAllUser(){
+        CommonResponse response = null;
+        try {
+          System.out.println("11111111111111");
+           response.setUsuarios(dao.findAllUsers()); 
+        } catch (Exception e) {
+            response.setRespuesta(e.getMessage());
+        }
+        
+        return response;
+    }
     
     @POST
     @Path("/findById")
